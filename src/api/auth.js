@@ -1,7 +1,7 @@
-import apiClient from "./Client";
+import apiClient from "./client";
 
 export async function registerUser(fullName, email, password) {
-  const response = await apiClient.post("/api/register", {
+  const response = await apiClient.post("/auth/register", {
     fullName,
     email,
     password,

@@ -65,10 +65,8 @@ function RecipeDetailPage() {
       <p className="recipe-author">By {recipe.CreatedByUserName}</p>
 
       <div className="recipe-detail-actions">
-        <Link to={`/recipes/{id}/edit`}>
-          <button type="button" onClick={handleDelete}>
-            Edit
-          </button>
+        <Link to={`/recipes/${id}/edit`}>
+          <button type="button">Edit</button>
         </Link>
         <button type="button" onClick={handleDelete}>
           Delete
